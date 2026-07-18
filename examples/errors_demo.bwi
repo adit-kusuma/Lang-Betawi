@@ -1,0 +1,14 @@
+nama entu "Betawi"
+ngomong("Ini bakal jalan duluan.")
+
+ngomongg("Testing fuzzy typo correction — ini KUDU jalan (Phase 3).")
+
+kalooo (bener) {
+    ngomong("Ini gak bakal ke-parse, 'kalooo' ketinggalan jauh dari 'kalo'.")
+}
+
+bukaWarung(8080) {
+    bikinLapak("/halo") {
+        ngomong("Baris ini seharusnya tetep ke-parse walau ada error di atas.")
+    }
+}

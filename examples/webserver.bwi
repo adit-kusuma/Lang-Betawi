@@ -1,0 +1,13 @@
+setup entu tanyaDatabase("CREATE TABLE IF NOT EXISTS warga (nama TEXT, umur INTEGER)")
+isi entu tanyaDatabase("INSERT INTO warga (nama, umur) VALUES ('Bro', 30)")
+
+bukaWarung(8080) {
+    bikinLapak("/halo") {
+        ngomong("Assalamualaikum dari server Betawi!")
+    }
+
+    bikinLapak("/warga") {
+        data entu tanyaDatabase("SELECT * FROM warga")
+        ngomong(data)
+    }
+}

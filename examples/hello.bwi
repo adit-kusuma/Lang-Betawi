@@ -1,0 +1,28 @@
+nama entu "Betawi"
+ngomong("Woi, gua jalan pake bahasa " + nama + "!")
+
+nyablak("Ini sinonim laen buat ngomong.")
+
+kalo (bener) {
+    cuap("Masuk ke percabangan kalo/if.")
+} kaloKagak {
+    cuap("Ini cabang else.")
+}
+
+bikinGaya sapa(nama_orang) {
+    balikin "Woi " + nama_orang + ", apa kabar?"
+}
+
+hasil entu sapa("Bro")
+ngomong(hasil)
+
+i entu 0
+musing (i < 3) {
+    ngomong("Ngulang ke-" + i)
+    i entu i + 1
+}
+
+kosong entu zonk
+kalo (kosong == zonk) {
+    ngomong("Variabel kosong emang beneran zonk.")
+}
